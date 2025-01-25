@@ -95,8 +95,9 @@ body {
 }
 #gtco-main-nav .navbar-nav li a {
   font-family: "OpenSans-Regular";
-  font-size: 18px;
-  color: #666666;
+  font-size: 16px;
+  /* color: #666666; */
+  color: black;
   padding: 5px 15px !important;
   text-transform: uppercase;
 }
