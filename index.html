@@ -45,6 +45,15 @@
             </div>
         </div>
     </nav>
+    <!-- Popup -->
+    <div class="popup-overlay" id="popup">
+        <div class="popup">
+          <span class="" id="closePopup" >&times;</span>
+          <h2>Join Our JavaScript Bootcamp!</h2>
+          <p>Learn JavaScript from scratch and become a pro developer.</p>
+            <a href="./pages/lms/bootcamp.html">  <button id="popupBtn">Enroll Now</button></a>
+        </div>
+      </div>
     <div class="container-fluid gtco-banner-area">
         <div class="container">
             <div class="row">
@@ -546,6 +555,26 @@
     </footer>
 
     <!-- Optional JavaScript -->
+    <script>
+        // Show the popup when the page loads
+        window.addEventListener('load', function() {
+          const popup = document.getElementById('popup');
+          popup.style.display = 'flex';
+        });
+    
+        // Redirect to the bootcamp page when the button is clicked
+        const popupBtn = document.getElementById('popupBtn');
+        popupBtn.addEventListener('click', function() {
+          window.location.href = '/bootcamp'; // Change '/bootcamp' to your bootcamp page URL
+        });
+    
+        // Close the popup when the close button is clicked
+        const closePopup = document.getElementById('closePopup');
+        closePopup.addEventListener('click', function() {
+          const popup = document.getElementById('popup');
+          popup.style.display = 'none';
+        });
+      </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
